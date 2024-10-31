@@ -1,0 +1,82 @@
+---
+title: "Problem2"
+author: "Kx2224"
+date: "2024-10-31"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data("ny_noaa")
+head(ny_noaa)
+```
+
+```{r}
+ny_noaa_sample = 
+  ny_noaa |> 
+  mutate(prcp = prcp/10,
+         tmax = as.numeric(tmax)/10, 
+         tmin = as.numeric(tmin)/10,
+         snwd = as.numeric(snwd),
+         year = year(date),
+         month = month(date),
+         day = day(date)) |> 
+  select(year, month, day, everything(), -date) |>
+  drop_na(prcp, snow, tmax, tmin) |>
+  sample_n(5000)
+
+head(ny_noaa_sample)
+```
+
+## Scatter Plot
+```{r}
+ny_noaa_sample |>
+  mutate(text_label = str_c("Precipitation(mm):", prcp, "\nSnow(mm):", snow)) |>
+  plot_ly(
+    y = ~tmax, x = ~tmin, text = ~text_label,
+    type = "scatter", mode = "markers",
+    color = ~as.factor(month), colors = "inferno"
+  )
+```
+
+
+## Box plot
+```{r}
+ny_noaa_sample |>
+  mutate(
+    month = factor(month, levels = 1:12, labels = month.name)) |>
+  plot_ly(
+    y = ~tmax, x = ~month, color = ~month,
+    type = "box", colors = "viridis"
+  )
+```
+
+
+## Bar plot
+```{r}
+monthly_snow = ny_noaa_sample |>
+  group_by(month) |>
+  summarise(avg_monthly_snow = mean(snow)*30)  
+head(monthly_snow)
+```
+
+```{r}
+monthly_snow |> 
+  mutate(month = factor(month, levels = 1:12, labels = month.name)) |> 
+  plot_ly(x = ~month, y = ~avg_monthly_snow, color = ~month, type = "bar", colors = "viridis")
+```
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+---
+title: "Kangyu Xu"
+output: pdf_document
+geometry: "left=1cm, right=1cm, top=1cm, bottom=1cm"
+fontsize: 10pt
+header-includes:
+  - \usepackage{fontawesome5}
+  - \usepackage{paracol}
+  - \usepackage{charter}
+---
+
+
+**New York** | \href{mailto: Lighter.Xu@outlook.com}{Lighter.Xu@outlook.com} | +1 9294741899 | [LinkedIn](https://www.linkedin.com/in/kangyu-xu-5984a5268/) | [GitHub](https://github.com/KanyeXuSelf)
+
+---
+
+## Education
+
+- **The Columbia University**  
+  _MS in Biostatistics (Data Science track)_  
+  **Sept 2020 – May 2025**
+
+- **The Chinese University of HongKong, Shenzhen**  
+  _BS in Data Science_  
+  **Sept 2024 – May 2024**  
+  **Coursework:** Artificial Intelligence, Machine Learning, Optimization, Computer Vision, Stochastic Process
+
+---
+
+## Professional Experience
+
+### Algorithm Engineer Intern  
+**Hongpu Information Technology**  
+_Shanghai, China_  
+**June 2024 – Aug 2024**
+
+- Conducted experiments on Hongpu’s knowledge graph algorithm, using ConvNext, ResNet, and Neo4j to build a robust knowledge graph.
+- Developed a transistor error mapping pipeline with ConvNext Base model, reducing detection time to under 10 seconds and achieving >90% accuracy.
+- Analyzed solar panel fault data, identifying high-frequency locations of common hidden cracks.
+
+### Data Analysis Intern (Macroeconomic Focus)  
+**Oxbridge Economics**  
+_Hong Kong, China_  
+**Dec 2023 – Apr 2024**
+
+- Conducted salary data research for various industries across Hong Kong, Canada, and Singapore.
+- Cleaned and analyzed data using Python’s pandas and numpy libraries.
+
+### Back-end Developer Intern  
+**Shenzhen Research Institute of Big Data**  
+_Shenzhen, China_  
+**Feb 2022 – Aug 2022**
+
+- Designed and developed a campus Applet, increasing student engagement by 30%.
+- Built team bulletin and discussion boards using Django.
+- Conducted API stress testing with Postman, optimizing backend performance.
+
+### Co-Founder & Operation Manager  
+**Lumens Streaming Visual Studio**  
+_Shenzhen, China_  
+**Sep 2021 – Sep 2022**
+
+- Co-founded a studio providing photography and package design services, achieving monthly income of 4,000 RMB.
+- Coordinated team management and maintained client relationships.
+
+---
+
+## Projects
+
+- **Identify Brain Dysfunction in Alzheimer's Disease via Normative Modelling**  
+  _Supervisor: Prof. Lifang He, Lehigh University_  
+  **Feb 2023 - Aug 2023**  
+  Developed normative models for disease state predictions, combining CVAE and Diffusion methods with PyTorch, improving prediction accuracy by 20%.
+
+- **Using trajectory and machine learning to predict ICU mortality in fracture trauma surgery**  
+  _Supervisor: Prof. Guilan Kong, Peking University_  
+  **Dec 2023 - Jun 2024**  
+  Modeled time-series data with logistic regression for prediction, leveraging trajectory models.
+
+- **Database Management System**  
+  **2022**  
+  Built a Python-based DBMS with functionalities for table creation, file storage, and element selection.
+
+- **Detection of AI-generated Images**  
+  **May 2023**  
+  Developed an image detection model with multi-branch architecture, incorporating Local Binary Pattern (LBP) features for enhanced accuracy.
+
+- **Comparison of Object Detection Algorithms**  
+  **May 2023**  
+  Compared models (e.g., Faster RCNN, YOLOv5) for object detection, achieving best performance with YOLOv5, mAP50 of 0.739.
+
+- **Stream Video Value Prediction Management**  
+  **Dec 2023**  
+  Built a LightGBM model to predict video performance, analyzing viewership metrics.
+
+---
+
+## Additional Experience
+
+- **Founder & Secretary General (2022-2024):** _Student Union, School of Data Science_  
+  Established organization for academic and research discussion, growing it to over 500 members and organizing guest lectures.
+
+---
+
+## Technologies
+
+- **Languages:** Python, C++, Java, R, SQL, JavaScript, Django, CSS, HTML
+- **Software/Editors:** Microsoft SQL Server, VS Code, PyCharm, Dock

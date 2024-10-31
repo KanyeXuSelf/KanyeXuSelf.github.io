@@ -1,7 +1,9 @@
 ---
-title: "Holy cow!"
+title: "Welcome to Kanye's Website!"
 ---
 
-### I have a webpage!
+### 
 
-And I can put all kinds of stuff on it!
+This is Kanye's first website.
+
+In this website, you can find my [Resume](resume.html) here. Moreover you can find the plotting of some weather data [here](Problem2.html).
